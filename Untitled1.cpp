@@ -8,9 +8,6 @@
 #define linhas 10
 #define colunas 20
 
-//char letra,matriz[linhas][colunas];
-//int i,j,num,aux;
-
 int x,y,num;
 char letra,matriz[linhas][colunas];
 
@@ -61,28 +58,6 @@ int comando(){
 
   printf("Digite o seu comando no seguinte formato:[orientação movimento]\n");
   scanf("%*c%c%*c%d%*c", &letra, &num);
-  //scanf("%c", &letra);
- //  scanf("%d", &num);
- /* switch(letra){
-  	case 'N':
-  		x -= num;
-  	//	return x;
-  	case 'S':
-  		x += num;
-  	//	return x;
-  	case 'L':
-  		y += num;
-  	//	return y;
-  	case 'O':
-  		y -= num;
-  	//	return y;
-  	default :
-  		return x,y;
-  }
-  */
-  //return x,y;
- 
- 
 	
   if(letra == 'N'){
     x -= num;
@@ -97,9 +72,10 @@ int comando(){
     printf("%d\n", x);
     printf("%d\n", y);
   }
-	fflush(stdin);
+
  // num = 0;
-//*/
+
+	fflush(stdin);
 }
   
   /* 
